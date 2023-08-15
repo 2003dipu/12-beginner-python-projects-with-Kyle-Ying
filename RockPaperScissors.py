@@ -1,4 +1,4 @@
-"""import random # (using function and if else statement)
+import random # (using function and if else statement)
 
 def is_win(user,computer):
         # returns true if player wins
@@ -10,6 +10,8 @@ def is_win(user,computer):
 def play():
     user = input("What's your choice? 'r' for rock,'p' for paper, 's' for scissors\n")
     computer = random.choice(['r','p','s'])
+    print(f"Player: {user}")
+    print(f"Computer: {computer}")
 
     if user == computer:
         return 'It\'s tie'
@@ -19,7 +21,8 @@ def play():
     return 'You Lost'
 
     # r>s (rock beats scissors), paper > scissors(paper beats scissors), scissors > paper(scissors beats paper)
-print(play())"""
+print(play())
+"""
 # Alternative code (using while loop and if else statement)
 import random
 
@@ -51,3 +54,4 @@ while running:
         running = False
 
 print("Thanks for playing!")
+"""
